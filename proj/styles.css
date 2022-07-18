@@ -1,0 +1,45 @@
+html{
+    box-sizing:border-box;
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 174, 0);
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%; 
+    margin: 0,0,0,0;
+}
+h1{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 60px;
+}
+#main-container{
+    height: 20%;
+    margin-top: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(125, 125, 125);
+    text-align: center;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+}
+input{
+    margin-bottom: 1%;
+    text-align: center;
+    width: fit-content;
+}
+#buttons{
+    text-align: center;
+    float: left;
+}
+#result{
+    width: 100%;
+    height: 15%;
+    font-size: 40px;
+    margin-top: 5%;
+}
