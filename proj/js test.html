@@ -3,25 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="reset-default-styles.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Calc online</h1>
         <div id="main-container">
-            <div id="inputs">
-                <input type="number" id="input1" value="0">
-                <input type="number" id="input2" value="0">
-                <input type="number" id="input3" value="0">
-            </div>
-            <div id="buttons">
-                <button id="plus" onclick="calculateValuesPlus()">+</button>
-                <button id="minus" onclick="calculateValuesMinus()">-</button>
-                <button id="divide" onclick="calculateValuesDivide()">/</button>
-                <button id="multiply" onclick="calculateValuesMultiply()">*</button>
-            </div>
-            <div id="result">
-                
-            </div>
+            <div id="first-part">
+                <ol>
+                    <li><input type="number" value="0" id="input1"></li>
+                    <li><input type="number" value="0" id="input2"></li>
+                    <li><input type="number" value="0" id="input3"></li>
+                    <li>
+                        <select name="operations" id="operations">
+                            <option value="choose operation">choose operation</option>
+                            <option id="plus" value="+" onclick="calculateValuesPlus()">+</option>
+                            <option id="minus" value="-" onclick="calculateValuesMinus()">-</option>
+                            <option id="divide" value="/" onclick="calculateValuesDivide()">/</option>
+                            <option id="multiply" value="*" onclick="calculateValuesMultiply()">*</option>
+                        </select>
+                        <button onclick="getSelectValue()">☑</button>
+                    </li>
+                </ol>
+            </div>   
+                                        <!--Second Part-->         
+            <div id="second-part">
+                <ol>
+                    <li>RESULT</li>
+                    <li id="RESULT"></li>
+                </ol>
+            </div>  
         </div>
  <script src="tasks.js"></script> 
 </body>
